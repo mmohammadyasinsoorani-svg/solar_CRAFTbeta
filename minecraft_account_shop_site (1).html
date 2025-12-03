@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سولار شاپ | Solar Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url('https://i.postimg.cc/28C16zMR/images-(1).jpg') center/cover no-repeat fixed;
+      color: #fff;
+    }
+    header {
+      background: #2ecc71;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      background: #1e1e1e;
+      padding: 10px;
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: #2ecc71;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .container {
+      padding: 200px 20px 20px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #2ecc71;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    button {
+      background: #2ecc71;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #27ae60;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    form {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #2ecc71;
+    }
+  </style>
+</head>
+<body>
+  <header>سولار شاپ • Solar Shop</header>
+  <nav>
+    <a href="#coming-soon">سرور</a>
+    <a href="#products">محصولات</a>
+    <a href="#java-full">اکانت</a>
+    <a href="#thumb-full">تامنیل</a>
+    <a href="#banner-full">بنر</a>
+    <a href="#order-form">سفارش</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Coming Soon سرور -->
+    <h2 id="coming-soon">سرور ماینکرافت - Coming Soon</h2>
+    <div class="card">
+      <h3>SolarCraft Server</h3>
+      <p>سرور اختصاصی سولار شاپ با مودها، رویدادها و economy حرفه‌ای — به‌زودی!</p>
+      <button onclick="alert('اطلاعات به‌زودی اضافه می‌شود')">اطلاعات بیشتر</button>
+    </div>
+
+    <!-- محصولات -->
+    <h2 id="products">محصولات سولار شاپ</h2>
+
+    <div class="card">
+      <h3>اکانت ماینکرافت Java Edition</h3>
+      <p>اکانت اورجینال جهت بازی آنلاین... <a href="#java-full" style="color:#2ecc71;">ادامه</a></p>
+      <button onclick="document.getElementById('order-form').scrollIntoView();">خرید</button>
+    </div>
+
+    <div class="card">
+      <h3>تامنیل حرفه‌ای یوتیوب</h3>
+      <p>طراحی تامنیل با سبک ماینکرافت و کیفیت بالا... <a href="#thumb-full" style="color:#2ecc71;">ادامه</a></p>
+      <button onclick="document.getElementById('order-form').scrollIntoView();">سفارش</button>
+    </div>
+
+    <div class="card">
+      <h3>گرافیک و بنر اختصاصی</h3>
+      <p>ساخت بنر، لوگو و کاور حرفه‌ای برای کانال‌ها... <a href="#banner-full" style="color:#2ecc71;">ادامه</a></p>
+      <button onclick="document.getElementById('order-form').scrollIntoView();">سفارش</button>
+    </div>
+
+    <!-- توضیحات کامل محصولات -->
+
+    <h2 id="java-full">توضیحات کامل اکانت Java Edition</h2>
+    <div class="card">
+      <p>اکانت کامل ماینکرافت Java Edition با قابلیت ورود آنلاین، تغییر اسکین، اتصال به لانچر رسمی و گارانتی تعویض. مناسب برای بازیکنان SMP، PvP و سرورهای عمومی.</p>
+    </div>
+
+    <h2 id="thumb-full">توضیحات کامل تامنیل حرفه‌ای</h2>
+    <div class="card">
+      <p>طراحی تامنیل با کیفیت Ultra HD با سبک ماینکرافت، سایه‌گذاری حرفه‌ای، کاراکترهای رندر شده و متن‌های جذاب مخصوص CTR بالا.</p>
+    </div>
+
+    <h2 id="banner-full">توضیحات کامل گرافیک و بنر</h2>
+    <div class="card">
+      <p>طراحی بنر اختصاصی برای دیسکورد، یوتیوب، کانال‌ها و سایت‌ها با کیفیت بالا و تم‌های متنوع. شامل نسخه خام + نسخه قابل ویرایش.</p>
+    </div>
+
+    <!-- فرم سفارش -->
+    <h2 id="order-form">فرم سفارش محصولات</h2>
+    <form onsubmit="alert('سفارش شما ثبت شد! ما با شما تماس می‌گیریم'); return false;">
+      <label>نام و نام خانوادگی:</label>
+      <input type="text" required placeholder="نام شما">
+      <label>ایمیل:</label>
+      <input type="email" required placeholder="email@example.com">
+      <label>محصول مورد نظر:</label>
+      <select required>
+        <option value="java">اکانت Java Edition</option>
+        <option value="thumbnail">تامنیل حرفه‌ای</option>
+        <option value="banner">بنر و گرافیک</option>
+      </select>
+      <label>توضیحات اضافی:</label>
+      <textarea placeholder="اگر توضیحی دارید بنویسید"></textarea>
+      <button type="submit">ثبت سفارش</button>
+    </form>
+
+  </div>
+</body>
+</html>
